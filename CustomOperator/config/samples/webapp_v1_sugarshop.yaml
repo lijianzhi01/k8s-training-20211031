@@ -1,0 +1,9 @@
+apiVersion: webapp.julian.swat/v1
+kind: Sugarshop
+metadata:
+  name: sugarsnapshot-test
+spec:
+  sourceVolumeName: pv-test
+  sourceClaimName: pvc-test
+  namespace: default
+  hostPath: "/tmp/sugar-test-dest"

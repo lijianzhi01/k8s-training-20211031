@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sugar
+spec:
+  containers:
+    - name: sugar-container
+      image: nginx
+      env:
+        - name: MY_ENV_VARIABLE
+  restartPolicy: Never

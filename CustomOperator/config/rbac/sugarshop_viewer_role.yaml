@@ -1,0 +1,20 @@
+# permissions for end users to view sugarshops.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: sugarshop-viewer-role
+rules:
+- apiGroups:
+  - webapp.julian.swat
+  resources:
+  - sugarshops
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - webapp.julian.swat
+  resources:
+  - sugarshops/status
+  verbs:
+  - get

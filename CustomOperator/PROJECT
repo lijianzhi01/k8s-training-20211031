@@ -1,0 +1,16 @@
+domain: julian.swat
+layout:
+- go.kubebuilder.io/v3
+projectName: sugarshop
+repo: julian.swat/sugarshop
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: julian.swat
+  group: webapp
+  kind: Sugarshop
+  path: julian.swat/sugarshop/api/v1
+  version: v1
+version: "3"

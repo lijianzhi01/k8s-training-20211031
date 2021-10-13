@@ -1,0 +1,24 @@
+# permissions for end users to edit sugarshops.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: sugarshop-editor-role
+rules:
+- apiGroups:
+  - webapp.julian.swat
+  resources:
+  - sugarshops
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - webapp.julian.swat
+  resources:
+  - sugarshops/status
+  verbs:
+  - get

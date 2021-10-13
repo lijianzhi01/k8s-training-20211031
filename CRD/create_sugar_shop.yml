@@ -1,0 +1,7 @@
+apiVersion: swat.sz/v1
+kind: sugarshop
+metadata:
+  name: cosmicsugar
+spec:
+  port: "8080"
+

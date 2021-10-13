@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: sugar 
+  namespace: default
+  labels:
+    app: sugar
+data:
+  my_env_variable: swat.sz
